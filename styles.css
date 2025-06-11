@@ -1,0 +1,433 @@
+:root {
+  --blue: #2da1e4;
+  --bg: #0b0b0b;
+  --shadow: 0 2px 2px rgba(130, 134, 136, 0.854);
+  --gold: rgb(225, 185, 67);
+  --shadowGold: 0 2px 10px rgb(130, 108, 11);
+}
+
+@font-face {
+  font-family: "Diwani Bent";
+  src: url("font/DiwaniBent.woff") format("woff2"),
+    url("font/DiwaniBent.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FS Albert Arabic Web";
+  src: url("font/FSAlbertArabicWeb-Bold.woff") format("woff2"),
+    url("font/FSAlbertArabicWeb-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "boogaloo", sans-serif;
+  min-height: 2000px;
+}
+
+.hero ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(cover.png);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  filter: blur();
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.hero img {
+  margin-top: 100px;
+}
+
+.hero h1 {
+  font-family: "fleur de leah", cursive;
+  font-size: 4rem;
+  text-shadow: 0 2px 1px rgb(130, 108, 11);
+  color: rgb(250, 250, 250);
+  font-weight: 500;
+}
+
+.hero h3 {
+  font-family: "Berkshire Swash", cursive;
+  font-size: 1rem;
+  text-shadow: 0 2px 2px rgb(75, 71, 71);
+  color: rgb(248, 247, 245);
+}
+
+.hero p {
+  font-family: "berkshire swash";
+  font-size: 1rem;
+  text-shadow: 0 2px 2px rgb(75, 71, 71);
+  color: rgb(248, 247, 245);
+}
+
+.hero a {
+  color: var(--gold);
+  background-color: white;
+  box-shadow: var(--shadow);
+  font-family: "berkshire swash";
+  font-size: 1rem;
+}
+
+.hero a:hover {
+  color: white;
+  background-color: var(--gold);
+}
+
+.mynavbar {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(3px);
+}
+
+.mynavbar .offcanvas {
+  height: 100vh;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: "fleur de leah", cursive;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--gold);
+  text-shadow: 0 1px 1px rgb(255, 253, 253);
+}
+
+.mynavbar .nav-link {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.mynavbar .nav-link:hover {
+  color: var(--gold);
+}
+
+.couple-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.muqoddimah,
+.gifts {
+  background-image: url(bg.png);
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 4.6rem;
+  position: relative;
+}
+
+.muqoddimah h2 {
+  font-family: "diwani bent";
+  font-size: 2.5rem;
+  font-weight: 500;
+  padding-bottom: 2rem;
+  color: var(--bg);
+  text-shadow: var(--shadow);
+}
+
+.muqoddimah h3,
+.gifts h3 {
+  font-family: "amiri";
+  font-size: 2.3rem;
+  font-weight: 600;
+  padding-bottom: 10px;
+  line-height: 2.7;
+  text-shadow: var(--shadow);
+  padding-left: 10px;
+  padding-right: 10px;
+  color: var(--blue);
+}
+
+.muqoddimah p,
+.gifts p {
+  font-family: "boogaloo";
+  font-size: 1.7rem;
+  padding-bottom: 10rem;
+  color: #464646;
+  text-shadow: var(--shadow);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.flower {
+  position: absolute;
+  width: 300px;
+}
+
+.left-flower {
+  bottom: 0px;
+  left: 0px;
+}
+
+.right-flower {
+  bottom: 0px;
+  right: 0px;
+}
+
+.home {
+  background-image: url(bungasakurabiru.png);
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.home h2,
+.rsvp h2 {
+  font-family: "sacramento";
+  font-size: 5rem;
+  font-weight: bold;
+  color: var(--gold);
+  text-shadow: 0 2px 2px rgb(255, 255, 255);
+}
+
+.gifts h2 {
+  color: var(--gold);
+  font-family: "sacramento";
+  font-size: 5rem;
+  font-weight: 600;
+  text-shadow: var(--shadow);
+}
+
+.home p {
+  color: #464646;
+  font-size: 1.5rem;
+  font-family: "boogaloo";
+  font-weight: 200;
+}
+
+.home .couple {
+  margin-top: 40px;
+}
+
+.home .couple h3 {
+  font-family: "rouge script";
+  font-weight: 600;
+  font-size: 3.5rem;
+  color: white;
+  text-shadow: var(--shadowGold);
+}
+
+.home .couple img {
+  width: 100%;
+}
+
+.home .wanita,
+.home .pria {
+  padding: 20px;
+  border-radius: 100px;
+  background-color: rgba(245, 237, 228, 0);
+}
+
+.home .heart {
+  width: 50px;
+  height: 50px;
+  /* background-color: white; */
+  display: flex;
+  /* border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); */
+  position: absolute;
+  left: 48%;
+  right: 50%;
+  transform: translate(-50%) translateY(100%);
+}
+
+.home .heart i {
+  margin: auto;
+  color: var(--gold);
+}
+
+.info {
+  background-image: url(bg.png);
+  background-size: cover;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.info p,
+.rsvp p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: "boogaloo";
+}
+
+.info .card {
+  background-color: rgb(255, 255, 255) !important;
+  color: var(--bg) !important;
+  border-radius: 100px 100px 1px 1px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-left: 50px;
+  margin-right: 50px;
+  position: relative;
+  height: auto;
+}
+
+.card h4 {
+  font-family: "rouge script";
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.card h5 {
+  font-family: "boogaloo";
+  font-size: 2rem;
+}
+
+.card p {
+  font-size: 1.7rem;
+}
+
+.card .alamat {
+  font-family: "poppins";
+  font-weight: 100;
+}
+
+.card a {
+  color: white;
+  background-color: var(--gold);
+  box-shadow: var(--shadow);
+  font-family: "berkshire swash";
+  font-size: 1rem;
+}
+
+.card a:hover {
+  color: var(--gold);
+  background-color: white;
+}
+
+.rsvp {
+  background-image: url(danau.png);
+  background-size: cover;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family: "boogaloo";
+  font-size: 1.7rem;
+}
+
+.rsvp-form {
+  background-color: rgba(179, 210, 239, 0.674);
+  padding: 15px;
+  margin: 10px;
+  border-radius: 30px;
+  border: solid 1px var(--gold);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin: 10px;
+}
+
+.rsvp button {
+  margin-left: 10px;
+}
+
+footer {
+  padding: 1rem;
+  background-image: url(footerbg.png);
+  font-family: "boogaloo";
+}
+
+footer a {
+  color: var(--bg);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+  font-weight: lighter;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+  margin: 0.5rem;
+}
+
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: muter 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 68%;
+  }
+  .home .heart {
+    display: none;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 70%;
+  }
+
+  .mynavbar .nav-link {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .sticky-top {
+    overflow: hidden;
+  }
+
+  .home .wanita {
+    margin-bottom: 7rem;
+  }
+
+  .card img {
+    width: 60%;
+  }
+}
+
+/* mobile phone */
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+  .flower {
+    width: 200px;
+  }
+
+  .audio-icon-wrapper {
+    position: fixed;
+  }
+
+  .gifts {
+    padding-bottom: 3rem;
+  }
+}
