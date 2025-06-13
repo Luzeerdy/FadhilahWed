@@ -447,4 +447,8 @@ footer li {
   .audio-icon-wrapper {
     position: fixed;
   }
+
+  .gifts p {
+    padding-bottom: 1rem;
+  }
 }
