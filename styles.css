@@ -161,7 +161,7 @@ body {
 .gifts p {
   font-family: "boogaloo";
   font-size: 1.7rem;
-  padding-bottom: 10rem;
+  padding-bottom: 3rem;
   color: #464646;
   text-shadow: var(--shadow);
   padding-left: 10px;
@@ -446,9 +446,5 @@ footer li {
 
   .audio-icon-wrapper {
     position: fixed;
-  }
-
-  .muqoddimah, .gifts {
-    height: 100vh;
   }
 }
