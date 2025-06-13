@@ -131,7 +131,7 @@ body {
   min-height: 100vh;
   margin-top: 1rem;
   padding-top: 5rem;
-  padding-bottom: 4.6rem;
+  padding-bottom: 3rem;
   position: relative;
 }
 
@@ -205,6 +205,7 @@ body {
   font-size: 5rem;
   font-weight: 600;
   text-shadow: var(--shadow);
+  padding-top: 10px;
 }
 
 .home p {
@@ -279,28 +280,47 @@ body {
   position: relative;
   height: auto;
 }
+.info .card1 {
+  background-color: rgb(255, 255, 255) !important;
+  color: var(--bg) !important;
+  border-radius: 1px 1px 100px 100px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-left: 50px;
+  margin-right: 50px;
+  position: relative;
+  height: auto;
+}
 
-.card h4 {
+.card-img {
+  padding-top: 10px;
+}
+
+.card h4,
+.card1 h4 {
   font-family: "rouge script";
   font-size: 3rem;
   font-weight: 500;
 }
 
-.card h5 {
+.card h5,
+.card1 h5 {
   font-family: "boogaloo";
   font-size: 2rem;
 }
 
-.card p {
+.card p,
+.card1 p {
   font-size: 1.7rem;
 }
 
-.card .alamat {
+.card .alamat,
+.card1 .alamat {
   font-family: "poppins";
   font-weight: 100;
 }
 
-.card a {
+.card a,
+.card1 a {
   color: white;
   background-color: var(--gold);
   box-shadow: var(--shadow);
@@ -308,7 +328,8 @@ body {
   font-size: 1rem;
 }
 
-.card a:hover {
+.card a:hover,
+.card1 a:hover {
   color: var(--gold);
   background-color: white;
 }
@@ -410,7 +431,7 @@ footer li {
   }
 
   .card img {
-    width: 60%;
+    width: 50px;
   }
 }
 
@@ -420,14 +441,14 @@ footer li {
     font-size: 60%;
   }
   .flower {
-    width: 200px;
+    width: 100px;
   }
 
   .audio-icon-wrapper {
     position: fixed;
   }
 
-  .gifts {
-    padding-bottom: 3rem;
+  .muqoddimah, .gifts {
+    height: fit-content;
   }
 }
